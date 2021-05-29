@@ -1,0 +1,34 @@
+#For more information see: https://libpointmatcher.readthedocs.io/en/latest/ and https://norlab.ulaval.ca/libpointmatcher-doc/
+#config file for point to plane minimizer
+readingDataPointsFilters:
+  - RandomSamplingDataPointsFilter:
+      prob: 0.5
+
+referenceDataPointsFilters:
+  - SamplingSurfaceNormalDataPointsFilter:
+      knn: 10
+
+matcher:
+  KDTreeMatcher:
+    knn: 1
+
+outlierFilters:
+  - TrimmedDistOutlierFilter:
+      ratio: 0.95
+
+errorMinimizer:
+  PointToPlaneErrorMinimizer
+
+transformationCheckers:
+  - CounterTransformationChecker:
+      maxIterationCount: 40
+  - DifferentialTransformationChecker:
+      minDiffRotErr: 0.001
+      minDiffTransErr: 0.01
+      smoothLength: 4
+
+inspector:
+    NullInspector
+
+logger:
+  NullLogger

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>standalone</name>
+  <version>0.1.0</version>
+  <description>Visual odometry testing</description>
+  <maintainer email="s7anrein@uni-bonn.de">Andrzej Reinke</maintainer>
+  <author email="s7anrein@uni-bonn.de">Andrzej Reinke</author>
+    <license>GNU GPLv3</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+<depend>visual_odometry_core</depend>
+<depend>lidar_odometry_core</depend>
+<depend>visual_lidar_odometry_core</depend>
+<depend>open3d_conversions</depend>
+<depend>kitti_utils</depend>
+</package>

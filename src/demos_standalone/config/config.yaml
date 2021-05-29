@@ -1,0 +1,53 @@
+dataset_name: kitti
+debug: false
+feature_descriptor: sift
+frame_step: 1
+from_image: 0
+kitti:
+  camera:
+    cx: '607.1928'
+    cy: '185.2157'
+    fx: '718.8560'
+    fy: '718.8560'
+  camera_lidar_transform:
+    r1: '4.276802385584e-04'
+    r2: '-9.999672484946e-01'
+    r3: '-8.084491683471e-03'
+    r4: '-7.210626507497e-03'
+    r5: '8.081198471645e-03'
+    r6: '-9.999413164504e-01'
+    r7: '9.999738645903e-01'
+    r8: '4.859485810390e-04'
+    r9: '-7.206933692422e-03'
+    t1: '-1.198459927713e-02'
+    t2: '-5.403984729748e-02'
+    t3: '-2.921968648686e-01'
+  dataset_dir: /media/andrzej/4TB1/Dataset/Kitti/kitti_to_run/kitti/sequences/
+  dataset_number: '00'
+  icp_config_file: /home/andrzej/code_workspace/visual_lidar_odometry/src/lib/lidar_odometry_lib/config/config.yaml
+  image_folder: image_2
+  image_format: /%06d.png
+  lidar_folder: velodyne
+  scan_format: /%06d.bin
+max_num_imgs_to_process: 10000
+odometries:
+  colorbased_vlo: null
+  gicp_lo: null
+  huang_vlo:
+    sift:
+      contrastThreshold: 0.04
+      edgeThreshold: 10.0
+      nOctaveLayers: 3
+      nfeatures: 0
+      sigma: 1.6
+  ndt_lo: null
+  point2plane_lo: null
+sanity_checker:
+  ackermann_checker: true
+  dynamics_checker: true
+  max_acceleration: 6.0
+  max_velocity: 0.8
+sanity_checker_mode: sanity_checker_metric
+sanity_checker_on: true
+save: true
+verbose: false

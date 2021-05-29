@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package format="2">
+    <name>lidar_odometry_core</name>
+    <version>0.1.0</version>
+    <description>Lidar Odometry module</description>
+    <maintainer email="s7anrein@uni-bonn.de">Andrzej Reinke</maintainer>
+    <author email="s7anrein@uni-bonn.de">Andrzej Reinke</author>
+    <license>GNU GPLv3</license>
+    <buildtool_depend>catkin</buildtool_depend>
+    <depend>common_vlo</depend>
+    <depend>cloud_msgs</depend>
+    <depend>gtsam</depend>
+
+
+
+    <depend>open3d_conversions</depend>
+    <depend>pcl_ros</depend>
+    <depend>roscpp</depend>
+
+
+
+</package>
