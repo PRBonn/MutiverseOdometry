@@ -12,7 +12,7 @@
 @inproceedings{reinke2021icra,
 title={{Simple But Effective Redundant Odometry for Autonomous Vehicles}},
 author={A. Reinke and X. Chen and C. Stachniss},
-booktitle=icra,
+booktitle={Proc. of the IEEE Intl. Conf. on Robotics \& Automation (ICRA)},
 year=2021,
 url = {http://www.ipb.uni-bonn.de/pdfs/reinke2021icra.pdf}
 }
