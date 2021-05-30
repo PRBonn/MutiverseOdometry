@@ -8,6 +8,17 @@
 **Related Papers**
 
 * **Simple But Effective Redundant Odometry for Autonomous Vehicles**,  Andrzej Reinke, Xieyuanli Chen, Lei Tai,Cyrill Stachniss, IEEE International Conference on Robotics and Automation (ICRA) 2021. [pdf](https://arxiv.org/abs/2105.11783)
+* BibTex
+```
+@inproceedings{reinke2021icra,
+title={{Simple But Effective Redundant Odometry for Autonomous Vehicles}},
+author={A. Reinke and X. Chen and C. Stachniss},
+booktitle=icra,
+year=2021,
+url = {http://www.ipb.uni-bonn.de/pdfs/reinke2021icra.pdf},
+codeurl = {https://github.com/PRBonn/MutiverseOdometry}
+}
+```
 
 <!-- ----------------------------------------------------------- -->
 ### 1. Prerequisites
